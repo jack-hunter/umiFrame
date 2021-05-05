@@ -1,0 +1,15 @@
+@import '../../../../style/color.less';
+
+.skin(@font, @theme) {
+  .-p-HomePage-Month {
+    color: @theme;
+  }
+}
+
+body.light.blue {
+  .skin(@light-blue-font, @light-blue-theme);
+}
+
+body {
+  .skin(@light-green-font, @light-green-theme);
+}

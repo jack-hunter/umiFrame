@@ -1,0 +1,4 @@
+*.d.ts
+*.js
+.eslintrc.js
+plugins/*
