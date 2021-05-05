@@ -6,23 +6,9 @@
  * @LastEditTime: 2021-04-12 10:43:52
  */
 
-import Role from '@tsintergy/role';
-import { history } from 'umi';
-
 // render
 const SystemRole = () => {
-  return (
-    <div className="-p-SystemRole">
-      <Role
-        HOST="web"
-        authType="organization"
-        onLogout={() => {
-          // 登录过期的时候调用
-          history.push('/Login');
-        }}
-      />
-    </div>
-  );
+  return <div className="-p-SystemRole">权限管理</div>;
 };
 
 export default SystemRole;

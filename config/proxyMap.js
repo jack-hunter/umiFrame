@@ -43,6 +43,6 @@ const getProxy = (target, pathRewrite = '/') => {
 };
 
 module.exports = {
-  阿里云: getProxy('http://120.79.132.195:8080/mssg_v3/'),
+  // 阿里云: getProxy('http://120.79.132.195:8080/mssg_v3/'),
   Yapi: getProxy('http://dev.yapi.tsintergy.com', `/mock/${yApiProjectIdMap[PROJECT_KEY]}/`),
 };

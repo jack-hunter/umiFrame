@@ -28,7 +28,7 @@ type children = {
 
 const noRequestPaths = ['/Login'];
 
-export const control = true;
+export const control = false;
 export default (
   initialState: any,
 ): {

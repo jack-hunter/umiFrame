@@ -6,9 +6,8 @@
  * @LastEditTime: 2021-04-15 09:53:54
  */
 
-import { Login } from '@tsintergy/role';
-import React from 'react';
 import { history, useModel } from 'umi';
+import { Button, Input } from 'antd';
 
 const HOST = `${API_PREFIX}/api`;
 window.baseHost = HOST;
@@ -21,11 +20,24 @@ export default () => {
     refresh();
   };
   return (
-    <Login
-      onSuccess={handleSuccessLogin}
-      host={HOST}
-      apiUrl={`web/logincontroller/login`}
-      title="能源产业链检测与兼管系统"
-    />
+    <div>
+      <div>
+        账号：
+        <Input />
+      </div>
+      <div>
+        密码：
+        <Input />
+      </div>
+      <div>
+        <Button
+          onClick={() => {
+            handleSuccessLogin();
+          }}
+        >
+          登录
+        </Button>
+      </div>
+    </div>
   );
 };

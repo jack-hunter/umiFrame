@@ -6,6 +6,8 @@
  * @LastEditTime: 2021-04-15 10:00:26
  */
 
+import React from 'react';
+
 declare module '*.css';
 declare module '*.less';
 declare module '*.png';
@@ -14,7 +16,6 @@ declare module '*.svg' {
   const url: string;
   export default url;
 }
-declare module '@tsintergy/role';
 
 interface Window {
   baseHost: string;

@@ -7,13 +7,23 @@
  */
 
 module.exports = {
-  // root: true,
-  extends: ['@tsintergy/react/eslint'],
-  plugins: ['prettier'], // 下载eslint-plugin-prettier，使eslint能够监听到prettier的格式错误
-  // "off"或0 -关闭规则
-  // “warn” 或1 - 开启规则, 使用警告 程序不会退出
-  // "error"或2 - 开启规则, 使用错误 程序退出
+  extends: [require.resolve('@umijs/fabric/dist/eslint')],
   rules: {
-    'prettier/prettier': 2,
+    'react-hooks/rules-of-hooks': 'error', // 检查 Hook 的规则
+    'react-hooks/exhaustive-deps': [
+      'warn',
+      {
+        additionalHooks: 'useReadyEffect',
+      },
+    ], // 检查 effect 的依赖
+    'no-plusplus': 'off',
+    'no-unused-vars': ['warn', { args: 'none' }],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn', { args: 'none' }],
+    '@typescript-eslint/consistent-type-definitions': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
   },
 };

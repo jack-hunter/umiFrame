@@ -28,10 +28,10 @@ npm i -g commitizen nrm
 
 ### 安装 node_modules
 ```bash
-# 添加 npm 私服源
-nrm add tsie http://npmreg.gzdevops.tsintergy.com/
-# 使用私服源
-nrm use tsie
+# # 添加 npm 私服源
+# nrm add tsie http://npmreg.gzdevops.tsintergy.com/
+# # 使用私服源
+# nrm use tsie
 # 安装依赖包
 yarn
 ```

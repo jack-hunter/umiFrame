@@ -6,9 +6,4 @@
  * @LastEditTime: 2021-04-15 19:14:16
  */
 
-module.exports = {
-  extends: ['@tsintergy/react/stylelint'],
-  rules: {
-    // your rules
-  },
-};
+module.exports = require('@umijs/fabric/dist/stylelint');

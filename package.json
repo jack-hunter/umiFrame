@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
-    "@tsintergy/role": "^3.4.3",
     "@types/lodash-es": "^4.17.4",
+    "@umijs/fabric": "^2.5.10",
     "@umijs/preset-react": "1.x",
     "antd": "^4.15.1",
     "dva-model-extend": "^0.1.2",
@@ -36,7 +36,6 @@
     "umi": "^3.4.8"
   },
   "devDependencies": {
-    "@tsintergy/eslint-config-react": "0.0.12",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@umijs/test": "^3.4.8",

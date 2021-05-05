@@ -1,0 +1,252 @@
+/*
+ * @FilePath: \mss_frontend\mock\Enum\typeManage.ts
+ * @Author: hunter
+ * @Date: 2021-04-12 16:02:45
+ * @LastEditors: hunter
+ * @LastEditTime: 2021-04-28 10:54:58
+ */
+
+const { PROXY_KEY } = process.env;
+
+export default PROXY_KEY === 'Yapi'
+  ? {
+      'get /web/basicDataManage/typeManage': {
+        retCode: 'T200',
+        retMsg: '操作成功',
+        data: {
+          riskLevelEnum: [
+            { text: 'I级', id: 1 },
+            { text: 'II级', id: 2 },
+            { text: 'III级', id: 3 },
+            { text: 'IV级', id: 4 },
+            { text: 'V级', id: 5 },
+            { text: 'VI级', id: 6 },
+          ],
+          ifUpdateEnum: [
+            { text: '新增', id: 1 },
+            { text: '台账', id: 0 },
+          ],
+          deviceStateEnum: [
+            { text: '检修', id: 1 },
+            { text: '冷备用', id: 2 },
+            { text: '热备用', id: 3 },
+            { text: '退出', id: 4 },
+            { text: '运行', id: 5 },
+            { text: '合上', id: 6 },
+            { text: '拉开', id: 7 },
+            { text: '停用', id: 8 },
+          ],
+          deviceAreaIdEnum: [
+            { text: '国调直调', id: 101 },
+            { text: '国调许可分中心直调', id: 102 },
+            { text: '国调许可省调直调', id: 103 },
+            { text: '分中心直调', id: 201 },
+            { text: '分中心许可省调直调', id: 202 },
+            { text: '省调直调', id: 301 },
+            { text: '省调许可', id: 302 },
+            { text: '省调委托可', id: 303 },
+          ],
+          projectSubtypeEnum: [
+            { text: '基建', id: 1 },
+            { text: '杆迁', id: 2 },
+            { text: '大修', id: 3 },
+            { text: '技改', id: 4 },
+            { text: '例试', id: 5 },
+            { text: '消缺', id: 6 },
+            { text: 'A级检修', id: 7 },
+            { text: 'B级检修', id: 8 },
+            { text: 'C级检修', id: 9 },
+            { text: 'D级检修', id: 10 },
+          ],
+          statusAssessEnum: [
+            { text: '正常状态', id: 0 },
+            { text: '注意状态', id: 1 },
+            { text: '异常状态', id: 2 },
+            { text: '严重状态', id: 3 },
+          ],
+          projectGradeEnum: [
+            { text: 'A', id: 1 },
+            { text: 'B', id: 2 },
+            { text: 'C', id: 3 },
+            { text: 'D', id: 4 },
+            { text: 'E', id: 5 },
+            { text: 'F', id: 6 },
+          ],
+          accidentLevelEnum: [
+            { text: '特大事故', id: 1 },
+            { text: '重大事故', id: 2 },
+            { text: '一般事故', id: 3 },
+            { text: '一级事件', id: 4 },
+            { text: '二级事件', id: 5 },
+            { text: '三级事件', id: 6 },
+            { text: '四级事件', id: 7 },
+            { text: '五级事件', id: 8 },
+          ],
+          riskTypeEnum: [
+            { text: '单线风险', id: 1 },
+            { text: '单变风险', id: 2 },
+            { text: '单母线风险', id: 3 },
+            { text: '重要用户风险', id: 4 },
+            { text: '同杆并架风险', id: 5 },
+          ],
+          approvalResultEnum: [
+            { text: '拒绝', id: 0 },
+            { text: '通过', id: 1 },
+            { text: '回退', id: 2 },
+            { text: '召回', id: 3 },
+          ],
+          projectTypeEnum: [
+            { text: '基建', id: 1 },
+            { text: '杆迁', id: 2 },
+            { text: '大修技改', id: 3 },
+            { text: '例试消缺', id: 4 },
+          ],
+          passTypeEnum: [
+            { text: '通过', id: 1 },
+            { text: '未通过', id: 2 },
+          ],
+          voltageTypeEnum: [
+            { text: '220KV', id: 220 },
+            { text: '500KV', id: 500 },
+            { text: '特高压', id: 1100 },
+            { text: '10KV', id: 10 },
+            { text: '15KV', id: 15 },
+          ],
+          ifEnum: [
+            { text: '否', id: 0 },
+            { text: '是', id: 1 },
+          ],
+          repairLevelEnum: [
+            { text: 'A级检修', id: 1 },
+            { text: 'B级检修', id: 2 },
+            { text: 'C级检修', id: 3 },
+            { text: 'D级检修', id: 4 },
+            { text: 'E级检修', id: 5 },
+          ],
+          adjustTypeEnum: [
+            { text: '不可调整', id: 1 },
+            { text: '可调整', id: 2 },
+          ],
+          projectStatusEnum: [
+            { text: '已采集', id: 1 },
+            { text: '已匹配', id: 2 },
+            { text: '已确认', id: 3 },
+          ],
+          projectErrorEnum: [
+            { text: '不识别', id: 0 },
+            { text: '识别', id: 1 },
+          ],
+          taskStateEnumEnum: [
+            { text: '未处理', id: 0 },
+            { text: '处理中', id: 1 },
+            { text: '处理成功', id: 2 },
+            { text: '处理失败', id: 99 },
+          ],
+          projectModelEnum: [
+            { text: '计划停电', id: 1 },
+            { text: '临时停电', id: 2 },
+          ],
+          unitsTypeEnum: [
+            { text: '总调', id: 0 },
+            { text: '中调', id: 1 },
+            { text: '地市供电局', id: 2 },
+            { text: '超高压', id: 3 },
+            { text: '电厂', id: 4 },
+            { text: '大用户', id: 5 },
+          ],
+          standardVoltageTypeEnum: [
+            { text: '220kV', id: 220 },
+            { text: '500kV', id: 500 },
+            { text: '特高压', id: 1100 },
+            { text: '10kV', id: 10 },
+            { text: '15kV', id: 15 },
+          ],
+          applyTypeEnum: [
+            { text: '年度申报', id: 1 },
+            { text: '月度申报', id: 2 },
+            { text: '周申报', id: 3 },
+            { text: '年维度风险辨识', id: 101 },
+            { text: '月维度风险辨识', id: 102 },
+            { text: '周维度风险辨识', id: 103 },
+            { text: '日维度风险辨识', id: 104 },
+          ],
+          flowStatusEnum: [
+            { text: '正常审批', id: 1 },
+            { text: '退回审批', id: 2 },
+            { text: '召回审批', id: 3 },
+          ],
+          deviceOtherTypeEnum: [
+            { text: '电容', id: 1 },
+            { text: '电抗', id: 2 },
+            { text: '电流互感', id: 3 },
+            { text: '电压互感', id: 4 },
+            { text: '换流变', id: 5 },
+            { text: '换流阀', id: 6 },
+            { text: '交流滤波器', id: 7 },
+          ],
+          approvalTypeEnum: [
+            { text: '年需求池', id: 1 },
+            { text: '月需求池', id: 2 },
+            { text: '周需求池', id: 3 },
+            { text: '年计划池', id: 4 },
+            { text: '月计划池', id: 5 },
+            { text: '周计划池', id: 6 },
+          ],
+          approvalSubTypeEnum: [
+            { text: '年计划停电申请审批通过', id: 101 },
+            { text: '月计划停电申请审批通过', id: 201 },
+            { text: '年计划延期停电申请审批通过', id: 202 },
+            { text: '非年计划停电申请审批通过', id: 203 },
+            { text: '周计划停电申请审批通过', id: 301 },
+            { text: '非月计划停电申请审批通过', id: 302 },
+            { text: '延期申请审批通过', id: 303 },
+            { text: '年计划申请审批通过', id: 401 },
+            { text: '月计划申请审批通过', id: 501 },
+            { text: '周计划申请审批通过', id: 601 },
+          ],
+          collectDataTypeEnum: [
+            { text: '计划停电设备', id: 1 },
+            { text: '已停电设备', id: 2 },
+          ],
+          repairTypeEnum: [
+            { text: '基建', id: 1 },
+            { text: '市政', id: 2 },
+            { text: '防雷防冰', id: 3 },
+            { text: '反措', id: 4 },
+            { text: '预试超期', id: 5 },
+            { text: '预试定检', id: 6 },
+            { text: '其它', id: 7 },
+          ],
+          reasonTypeEnum: [
+            { text: '其他原因', id: 0 },
+            { text: '设备申请检修跨年', id: 1 },
+            { text: '检修工期超长', id: 2 },
+            { text: '检修同时约束冲突', id: 3 },
+            { text: '检修互斥约束冲突', id: 4 },
+            { text: '保电约束冲突', id: 5 },
+            { text: '区域检修数量约束限制', id: 6 },
+          ],
+          deviceSecondaryTypeEnum: [
+            { text: '保护装置', id: 1 },
+            { text: '国调保护装置', id: 2 },
+          ],
+          projectLevelEnum: [
+            { text: '不可调', id: 1 },
+            { text: '尽量不调', id: 2 },
+            { text: '可调', id: 3 },
+          ],
+          deviceTypeEnum: [
+            { text: '主变', id: 1 },
+            { text: '线路', id: 2 },
+            { text: '母线', id: 3 },
+            { text: '机组', id: 4 },
+            { text: '联络线', id: 5 },
+            { text: '调相机', id: 6 },
+            { text: '电抗', id: 7 },
+            { text: '断路器', id: 8 },
+            { text: '特殊', id: 9 },
+          ],
+        },
+      },
+    }
+  : {};

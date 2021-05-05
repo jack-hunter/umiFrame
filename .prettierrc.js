@@ -6,8 +6,4 @@
  * @LastEditTime: 2021-04-12 11:46:37
  */
 
-const prettier = require('@tsintergy/eslint-config-react/prettier');
-
-module.exports = {
-  ...prettier,
-};
+module.exports = require('@umijs/fabric/dist/prettier');
